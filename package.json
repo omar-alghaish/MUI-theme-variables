@@ -1,12 +1,15 @@
 {
-  "name": "template-react-component-library",
-  "version": "0.0.1",
+  "name": "mui-variables",
+  "version": "0.0.6",
   "description": "A react component library",
   "scripts": {
     "rollup": "rollup -c --bundleConfigAsCjs"
   },
-  "keywords": [],
-  "author": "omar alghaish",
+  "author": {
+    "name": "Omar Alghaish",
+    "email": "omaralghish@gmail.com",
+    "url": "https://alghaish-eng.web.app/"
+  },
   "license": "ISC",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^25.0.3",
@@ -25,6 +28,12 @@
   ],
   "types": "dist/index.d.ts",
   "dependencies": {
+    "rollup-plugin-postcss": "^4.0.2",
     "tslib": "^2.6.1"
+  },
+  "keywords": ["react", "component", "library", "UI", "components"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/omar-alghaish/template-react-component-library.git"
   }
 }
