@@ -1,7 +1,7 @@
 {
-  "name": "mui-variables",
-  "version": "0.0.6",
-  "description": "A react component library",
+  "name": "mui-theme-variables",
+  "version": "0.0.2",
+  "description": "A library that enables you to use MUI theme properties as CSS variables, so you can use them in separate CSS and SCSS files.",
   "scripts": {
     "rollup": "rollup -c --bundleConfigAsCjs"
   },
@@ -31,9 +31,15 @@
     "rollup-plugin-postcss": "^4.0.2",
     "tslib": "^2.6.1"
   },
-  "keywords": ["react", "component", "library", "UI", "components"],
+  "keywords": [
+    "react",
+    "component",
+    "library",
+    "UI",
+    "MUI"
+  ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/omar-alghaish/template-react-component-library.git"
+    "url": "https://github.com/omar-alghaish/MUI-theme-variables"
   }
 }
