@@ -1,5 +1,12 @@
 # MUI-THEME-VARIABLES
 
+## Description
+
+It is not the best way to write CSS code in a JavaScript file because the code becomes complicated, so this library enables you to use MUI theme properties as CSS variables, so you can use them in separate CSS and SCSS files.
+
+## Note
+
+When you create a custom theme, the variables will change automatically
 
 ## Installation
 
@@ -12,6 +19,8 @@ $ npm install mui-theme-variables
 
 ## Example
 
+### In the app.js file
+
 ```js
 import { useTheme } from "@mui/material/styles";
 import { useVariables } from "mui-theme-variables";
@@ -20,13 +29,15 @@ import "./style.css"
 const theme = useTheme();
 const { variables } = useVariables(theme)
 
+// put the variables in the style prop in the main container
+
 <div style={variables}>
-<h1 className="h1">Hello world</h1>
+    <h1 className="h1">Hello world</h1>
 </div>
 
 ```
 
-#### in the CSS or SCSS file
+### In the CSS file
 
 ```css
 .h1 {
@@ -34,9 +45,15 @@ const { variables } = useVariables(theme)
 }
 ```
 
-## Note
+### In the SCSS file
 
-When you create a custom theme, the variables will change automatically
+```scss
+.h1 {
+  color: var(--palette-primary-main);
+}
+```
+
+## Variables
 
 | Variable Name                                                                        | default                                                                                                 |
 | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------- |

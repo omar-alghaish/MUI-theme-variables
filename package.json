@@ -1,6 +1,6 @@
 {
   "name": "mui-theme-variables",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "A library that enables you to use MUI theme properties as CSS variables, so you can use them in separate CSS and SCSS files.",
   "scripts": {
     "rollup": "rollup -c --bundleConfigAsCjs"
