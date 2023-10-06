@@ -22,7 +22,7 @@ const useVariables = (theme: Theme) => {
           if (typeof obj[key] === "object" && obj[key] !== null) {
             acc = { ...acc, ...flattenObject(obj[key], `${prefix + key}-`) };
           } else {
-            acc[cssVarName] = obj[key] as any; // Specify 'any' type here
+            acc[cssVarName] = obj[key] as any; 
           }
         }
         return acc;
